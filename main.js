@@ -23,7 +23,7 @@ const colorIndex = getRandomNumber(0, 4);
 const color = colors[colorIndex];
 
 let coloredBoxesHtml = '';
-for (let i = 0; i < 377; i++) {
+for (let i = 0; i < 380; i++) {
   let randNum = getRandomNumber(0, 4);
   let colorOfSingleBox = colors[randNum];
   coloredBoxesHtml += `
@@ -35,11 +35,6 @@ for (let i = 0; i < 377; i++) {
 
 document.querySelector('#app').innerHTML = /*html*/ `
 <h1>Realistic examples for Math.random()</h1>
-
-<h2>Random colored boxes</h2>
-<div class="boxes">
-${coloredBoxesHtml}
-</div>
 
 <h2>Math.random()</h2>
 <ul>
@@ -55,4 +50,11 @@ ${coloredBoxesHtml}
 <h2>Random colored box</h2>
 <p>Color index is ${colorIndex}</p>
 <div class="box" style="background-color: ${color}"></div>
+
+<h2>Random colored boxes</h2>
+<div class="boxes">
+${coloredBoxesHtml}
+</div>
+
 `;
+
