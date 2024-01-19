@@ -13,3 +13,9 @@ span {
   height: 5rem;
   width: 5rem;
 }
+
+.boxes {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
