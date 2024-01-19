@@ -8,3 +8,8 @@ span {
   color: red;
   font-size: 1.3rem;
 }
+
+.box {
+  height: 10rem;
+  width: 10rem;
+}
