@@ -2,6 +2,7 @@ import './style.css'
 
 // CODING
 
+// indexes of arrays are: 0,1,2,3,4
 const colors = ['blue', 'red', 'green', 'black', 'purple'];
 
 const getRandomNumber = (start, end) => {
@@ -17,6 +18,9 @@ const rand5 = Math.floor(randomNumber* 3) + 3;
 // 0 | 3
 // 1 | 4
 // 2 | 5
+
+const colorIndex = getRandomNumber(0, 4);
+const color = colors[colorIndex];
 
 
 
@@ -36,6 +40,7 @@ document.querySelector('#app').innerHTML = /*html*/ `
 </ul>
 
 <h2>Random colored box</h2>
-<div class="box" style="color: gray"></div>
+<p>Color index is ${colorIndex}</p>
+<div class="box" style="background-color: ${color}"></div>
 
 `
